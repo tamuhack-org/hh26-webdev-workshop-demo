@@ -60,24 +60,30 @@ body {
 
 .card {
     font-family: "Poppins", sans-serif;
+    margin-left: 100px;
     margin-top: 100px;
     background-color: white;
-    width: min(50rem, 100%);
-    border-radius: 20px;
+    width: 800px;
+    border-radius: 16px;
     overflow: hidden;
 }
 
 .card-information {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    padding: 20px;
+    column-gap: 32px;
+    place-items: center;
 }
 
 .event-information {
     padding: 20px;
-    flex-grow: 1;
+    font-size: 22px;
 }
 
-.heading {
-    padding: 20px;
-    background-color: #56A2DF;
+.card-title {
+    border-bottom: 8px solid #FED73E;
+    padding: 22px;
+    background-color: #274B98;
     color: white;
 }
